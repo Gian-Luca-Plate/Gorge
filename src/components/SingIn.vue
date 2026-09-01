@@ -42,7 +42,6 @@ export default {
 
 <template>
   <div id="login">
-    <img src="" class="logoForms" />
     <div style="font-size: 16px; font-weight: bold">Login on an account</div>
     <br />
     <div class="FormsSing">

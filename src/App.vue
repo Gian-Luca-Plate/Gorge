@@ -9,12 +9,10 @@ export default {
 </script>
 
 <style>
-/* {
-  background-color: #9fb1bc;
+* {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}*/
+  font-weight: 500;
+}
 
 </style>

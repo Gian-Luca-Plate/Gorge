@@ -1,6 +1,5 @@
 <template>
   <div id="singUp">
-    <img src="" class="logoForms" />
     <div style="font-size: 16px; font-weight: bold">Create an account</div>
     <br />
     <div class="FormsSing">

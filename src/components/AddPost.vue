@@ -6,14 +6,17 @@
     <button @click="add">Submit</button>
   </router-link>
     <p v-if="uploadStatus">{{ uploadStatus }}</p>
+    <navbar></navbar>
   </div>
 </template>
 
 <script>
 
 import { supabase } from "@/client/supabase";
+import navbar from './navbar.vue';
 
 export default {
+  components: { navbar },
   name: "Home",
   data() {
     return {
@@ -48,7 +51,7 @@ export default {
 
         if (error) throw error;
 
-        this.UrlStorageImg = 'https://ivzfzexvkzaztkbqvdrh.supabase.co/storage/v1/object/public/Picture/'+data.path
+        this.UrlStorageImg = 'https://sbxavgocogvoivicdvuj.supabase.co/storage/v1/object/public/Picture/'+data.path
         this.uploadStatus = `✅ Datei erfolgreich hochgeladen: ${data.path}`;
         console.log("Upload erfolgreich:", this.UrlStorageImg);
       } catch (error) {

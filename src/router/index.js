@@ -3,7 +3,7 @@ import SingUpView from '../views/SingUpView.vue'
 import AddPostView from '@/views/AddPostView.vue'
 import SingInView from '@/views/SingInView.vue'
 import HomeView from '@/views/HomeView.vue'
-import Ems from '@/components/ems.vue'
+
 
 const routes = [
   {
@@ -26,11 +26,6 @@ const routes = [
     path: '/login',
     name: 'singIn',
     component: SingInView
-  },
-  {
-    path: '/ems',
-    name: 'ems',
-    component:Ems
   }
 ]
 

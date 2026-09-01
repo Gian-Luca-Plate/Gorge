@@ -51,33 +51,30 @@ export default {
     <navbar></navbar>
     <div v-for="x in Posts" :key="x">
       <div v-for="y in x" :key="y">
+        <br>
         {{ y.UserName }}
         <br>
-        {{ y.ui }}
-        {{ y.PostText }}
-        <br />
         <img :src="y.PostImg" alt="" />
+        <br>
+        {{ y.PostText }}
       </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+     <br>
+    <br>
+    <br>
+    
+    
   </div>
 </template>
 
 <style>
 img {
-  max-width: 200px;
+  max-width: 100%;
 }
 
-.unten {
-  position: fixed;
-  bottom: 60px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #2e5266;
-  border-radius: 8px;
-}
-.unten svg {
-  background-color: #2e5266;
-  border-radius: 8px;
-  padding: 10px;
-}
+
 </style>
